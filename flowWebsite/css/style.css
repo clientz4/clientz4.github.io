@@ -1,0 +1,38 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: lavenderblush;
+}
+
+div.container {
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    padding: 50px;
+    margin: 10px auto;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    background-color: lavenderblush;
+    text-decoration: none;
+}
+
+ul.nav a:hover {
+    background-color: hotpink;
+}

@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            background-color: lavenderblush;
-        }
-        
         p {
             color: indigo;
         }
@@ -34,48 +31,59 @@
 </head>
 
 <body>
-    <h1>Some HTML stuff</h1>
-    <ul>
-        <li>apples</li>
-        <li>oranges</li>
-        <li>banana</li>
-    </ul>
-    <!--This is how you do an ordered list-->
-    <h2>top movies</h2>
-    <ol>
-        <li>My Neighbor Totoro</li>
-        <li>The Half of it</li>
-    </ol>
-    <table>
-        <tr>
-            <th>x</th>
-            <th>y</th>
-            <th>z</th>
-        </tr>
-        <tr>
-            <td>l</td>
-            <td>o</td>
-            <td>l</td>
-        </tr>
-        <tr>
-            <td>x</td>
-            <td>o</td>
-            <td>x</td>
-        </tr>
-    </table>
-    <h2>Internal CSS</h2>
-    <p style="color: SteelBlue">This text will be blue</p>
-    <p style="color:thistle">this text will be purple</p>
-    <p style="font-size: x-large;">this text will be big</p>
-    <p style="font-size:small">this text will be small</p>
-    <p style="color:lightsalmon; font: size 24px; text-align: center;">this text will me orange, 24px, and centered</p>
+    <div class="container">
+        <ul class="nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+        <h1>Some HTML stuff</h1>
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>banana</li>
+        </ul>
+        <!--This is how you do an ordered list-->
+        <h2>top movies</h2>
+        <ol>
+            <li>My Neighbor Totoro</li>
+            <li>The Half of it</li>
+        </ol>
+        <table>
+            <tr>
+                <th>x</th>
+                <th>y</th>
+                <th>z</th>
+            </tr>
+            <tr>
+                <td>l</td>
+                <td>o</td>
+                <td>l</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>o</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <h2>Internal CSS</h2>
+        <p style="color: SteelBlue">This text will be blue</p>
+        <p style="color:thistle">this text will be purple</p>
+        <p style="font-size: x-large;">this text will be big</p>
+        <p style="font-size:small">this text will be small</p>
+        <p style="color:lightsalmon; font: size 24px; text-align: center;">this text will me orange, 24px, and centered</p>
 
-    <h2>Internal CSS w/ selectors</h2>
-    <p>blue</p>
-    <p id="red-text">red</p>
-    <p>big</p>
-    <p class="small-text">small</p>
+        <h2>Internal CSS w/ selectors</h2>
+        <p>blue</p>
+        <p id="red-text">red</p>
+        <p>big</p>
+        <p class="small-text">small</p>
 
+
+    </div>
 </body>
 
 </html>
