@@ -11,6 +11,7 @@ body {
     padding: 0;
     overflow: hidden;
     background: lavenderblush;
+    text-align: center;
 }
 
 div.container {
@@ -22,7 +23,7 @@ div.container {
 }
 
 ul.nav li {
-    float: left;
+    display: inline-block
 }
 
 ul.nav li a {
