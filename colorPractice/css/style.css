@@ -1,0 +1,7 @@
+div.container {
+    width: 900px;
+    background-color: #BFBFBF;
+    border: 5px solid #BFBFBF;
+    padding: 50px;
+    margin: 10px auto;
+}
