@@ -5,3 +5,20 @@ div.container {
     padding: 50px;
     margin: 10px auto;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 50%;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #C5CED9;
+    text-align: center;
+}
