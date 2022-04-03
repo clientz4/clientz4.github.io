@@ -45,13 +45,42 @@ ul.nav a:hover {
 /* Styling headers*/
 
 .pageHeader {
-    font-family: 'Fauna One', serif;
+    font-family: Garamond, serif;
     text-align: center;
     color: #6d6875;
 }
 
 .header {
-    font-family: 'Cinzel', serif;
+    font-family: Garamond, serif;
     text-align: center;
     color: #6d6875;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    color: #6d6875;
+    font-weight: 550;
+}
+
+.doubleSpace {
+    line-height: 2;
+    position: relative;
+    top: -.5em;
+}
+
+
+/*centering images*/
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*adding shadow to image*/
+
+#boxShadow {
+    box-shadow: 10px 10px 5px #e5989b;
 }
