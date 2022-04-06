@@ -118,13 +118,143 @@ p {
 
 /*styling gallery*/
 
-ul.gallery li {
+
+/*ul.gallery li*/
+
+
+/*styling the polaroids*/
+
+figure.bookone {
     list-style: none;
     float: left;
     padding: 15px 15px 35px 15px;
     background-color: ghostwhite;
     border: 1px solid ghostwhite;
-    box-shadow: 0px 2px 15px lightgray;
     position: relative;
-    margin-right: 25px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+figure.booktwo {
+    list-style: none;
+    float: right;
+    padding: 15px 15px 35px 15px;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+figure.bookthree {
+    list-style: none;
+    float: left;
+    padding: 15px 15px 35px 15px;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+figure.bookfour {
+    list-style: none;
+    float: right;
+    padding: 15px 15px 35px 15px;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+figure.bookfive {
+    list-style: none;
+    float: left;
+    padding: 15px 15px 35px 15px;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+figure.booksix {
+    list-style: none;
+    float: right;
+    padding: 15px 15px 35px 15px;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    position: relative;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 6px lightgray;
+    -moz-box-shadow: 0 4px 6px lightgray;
+    box-shadow: 0px 4px 6px lightgray;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/*making polaroids move*/
+
+figure:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 15px 25px lightgray;
+    -moz-box-shadow: 0 15px 25px lightgray;
+    box-shadow: lightgrey;
+}
+
+
+/*captioning polaroid*/
+
+figcaption {
+    text-align: center;
+    color: #6d6875;
+    font-family: Garamond, serif;
 }
