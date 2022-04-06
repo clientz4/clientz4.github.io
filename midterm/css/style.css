@@ -41,6 +41,13 @@ ul.nav a:hover {
     background-color: #ffb4a2;
 }
 
+.tables {
+    font-family: Garamond, serif;
+    color: #6d6875;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Styling headers*/
 
@@ -94,6 +101,19 @@ p {
     margin-right: auto;
     width: 25%;
 }
+
+
+/*Karen's picture*/
+
+#karen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+/*resources table*/
 
 
 /*styling gallery*/
