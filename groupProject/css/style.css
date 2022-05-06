@@ -1,0 +1,46 @@
+.nav {
+    background-color: grey;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+ul.nav li {
+    display: inline-block;
+}
+
+ul.nav li a {
+    display: block;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+ul.nav a:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+.active {
+    background-color: darkgray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.webtitle {
+    font-size: 20px;
+    text-align: left;
+}
+
+.webtext {
+    font-size: 12.5px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 15px;
+    text-align: left;
+}
