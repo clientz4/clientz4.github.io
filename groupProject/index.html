@@ -9,17 +9,19 @@
     <title>Home Page</title>
     <style>
         .header {
-            background-image: url('../images/salmon.jpg');
+            background-image: url('images/salmon.jpg');
+            filter: brightness(70%);
             padding-bottom: 200px;
-            opacity: 0.75;
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <ul class="nav" align="center">
+    <div class="grid-container">
+        <div class=" grid-item header container">
+            <ul class=" grid-item nav" align="center">
                 <li>
                     <a href="index.html">Home</a>
                 </li>

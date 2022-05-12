@@ -1,66 +1,71 @@
-.nav {
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-}
-
-ul.nav li {
-    display: inline-block;
-}
-
-ul.nav li a {
-    color: white;
-    display: block;
-    text-align: center;
-    width: 200px;
-    line-height: 3em;
-    margin-right: 40px;
-    text-decoration: none;
-}
-
-ul.nav a:hover {
-    background-color: rgba(116, 128, 255, 0.221);
-}
-
-.nav-centered a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-ul {
-    list-style-type: none;
-}
-
-.webtitle {
-    font-size: 20px;
-    text-align: left;
-}
-
-.webtext {
-    font-size: 12.5px;
-    text-align: left;
-}
-
-ul li {
-    font-size: 15px;
-    text-align: left;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: black;
-    background-color: aliceblue;
-}
-
-.container {
-    background-color: black;
-    height: 425px;
-}
+    /*Grid Work*/
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px
+    }
+    
+    .grid-item {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    .nav {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+        grid-column: 1/ span 3;
+    }
+    
+    ul.nav li {
+        display: inline-block;
+    }
+    
+    ul.nav li a {
+        color: white;
+        display: block;
+        text-align: center;
+        width: 200px;
+        line-height: 3em;
+        margin-right: 30px;
+        text-decoration: none;
+    }
+    
+    ul.nav a:hover {
+        background-color: rgba(116, 128, 255, 0.221);
+    }
+    
+    .nav-centered a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    ul li {
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: black;
+        background-color: aliceblue;
+    }
+    
+    .container {
+        grid-column: 1/ span 3;
+        grid-row: 1/span 2;
+    }
