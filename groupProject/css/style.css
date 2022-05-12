@@ -10,6 +10,7 @@ ul.nav li {
 }
 
 ul.nav li a {
+    color: white;
     display: block;
     text-align: center;
     width: 200px;
@@ -19,7 +20,7 @@ ul.nav li a {
 }
 
 ul.nav a:hover {
-    background-color: rgb(97, 97, 97);
+    background-color: rgba(116, 128, 255, 0.221);
 }
 
 .nav-centered a {
@@ -59,7 +60,7 @@ ul li {
     background-color: aliceblue;
 }
 
-.header {
-    background-image: url('../images/salmon.jpg');
-    padding-bottom: 200px;
+.container {
+    background-color: black;
+    height: 425px;
 }
