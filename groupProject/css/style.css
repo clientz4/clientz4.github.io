@@ -45,6 +45,11 @@
         grid-column: 1/ span 3;
     }
     
+    .strain {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+    
     ul.nav li {
         display: inline-block;
     }
