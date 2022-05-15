@@ -12,19 +12,29 @@
         padding: 20px;
     }
     
+    .nav-menu {
+        grid-column: 1/ span 3;
+        grid-row: 1;
+    }
+    
+    .title {
+        grid-column: 1/ span 3;
+        grid-row: 1/2;
+    }
+    
     .history {
-        grid-column: 1/span 3;
-        grid-row: 1 /span 1;
+        grid-column: 1/2;
+        grid-row: 2/4;
     }
     
     .timeline {
-        grid-column: 1/span 3;
-        grid-row: 2 /span 1;
+        grid-column: 2/3;
+        grid-row: 2/4;
     }
     
     .issues {
-        grid-column: 1/span 3;
-        grid-row: 2 /span 1;
+        grid-column: 3/4;
+        grid-row: 2/4;
     }
     
     .nav {

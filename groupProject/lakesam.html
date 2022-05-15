@@ -10,7 +10,7 @@
     <style>
         .header {
             background-image: url('images/lakesamamish.jpg');
-            transform: translate(-50%, -50%);
+            /*transform: translate(-50%, -50%);*/
             filter: brightness(70%);
             padding-bottom: 400px;
             grid-column: 1/span 3;
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="header">
             <ul class="nav">
@@ -32,17 +33,35 @@
         </div>
     </div>
 
-
-    <h1>Lake Sammamish</h1>
-    <h2>History</h2>
-    <iframe width="400" height="200" src="https://www.youtube.com/embed/dTCe6ih4JQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <img src="images/lakesammamishdev.gif" alt="Recession of the Puget ice lobe and the formation of Lake Sammamish" height="30%" width="30%">
+    <div class="grid-container">
 
 
-    <h2>Issues </h2>
 
-    <div class="footer">
-        <footer>Created by &copy; A Group &#128513;</footer>
+        <h1 class="title">Lake Sammamish</h1>
+
+
+
+
+        <div class="grid-item history">
+
+            <h2>History</h2>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/dTCe6ih4JQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="images/lakesammamishdev.gif" alt="Recession of the Puget ice lobe and the formation of Lake Sammamish" height="30%" width="30%">
+
+        </div>
+
+        <div class="grid-item timeline">
+            <h2>timelines</h2>
+        </div>
+
+        <div class="grid-item issues">
+            <h2>Issues </h2>
+        </div>
+
+
+        <div class="footer">
+            <footer>Created by &copy; A Group &#128513;</footer>
+        </div>
     </div>
 </body>
 
