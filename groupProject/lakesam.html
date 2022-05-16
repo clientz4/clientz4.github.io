@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- JIAXING - HOW I CHALLENGED MYSELF
+I tried to challenge myself by incorporating as many elements as possible into my pages. 
+I also tried to create engaging content as well. In terms of css, I ran into a lot of erros
+and challenged myself to solve each and every one of them. I eventually discovered that w3 schools is
+an extremely helpful resource. In terms of content, I tried to look over numerous sources to try to
+find fun facts and interesting information, as I didn't want to bore views with uninteresting facts.
+Creating the grid from scratch was not only my biggest challenge, but my entire group's biggest challenge.
+We challenged ourselves by making a custom grid, and after some troubleshooting and teamwork, we managed to
+create a functional grid. I might have challenged myself a bit too much, because I ended up adding some super
+complicated code to try to make our grid look nice which ultimately didn't work. In the end, I based my grid 
+off my groupmates work, so credit goes to them. (Don't worry, I understand how the grid works and how to properly
+make one.)-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .header {
-            background-image: url('images/lakesammamishwaterfront.webp');
+            background-image: url('images/lakesammamishgreen.jpg');
             background-size: 100%;
             filter: brightness(70%);
             padding-bottom: 200px;
@@ -19,10 +31,21 @@
         
         p {
             text-align: left;
+            font-size: 18px;
         }
         
-        li {
+        .tableitem {
             list-style: circle;
+            font-size: 20px;
+        }
+        
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            font-size: 20px;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -49,31 +72,82 @@
 
         <div class="grid-item history">
 
-            <h3>History</h3>
-            <img src="images/lakesammamishdev.gif" alt="Recession of the Puget ice lobe and the formation of Lake Sammamish" height="40%" width="100%">
-            <p style="font-size: 15px;">(Above: The Recession of the Puget Ice Lobe and the Formation of Lake Sammamish)</p>
-            <p style="font-size: 15px;">Lake Sammamish is a remnant of history. The Lake is located in a glacial trough that was formed during the previous ice age. Parts of the ice sheet extended South through Puget Sound, where they formed both Lake Sammamish and Lake Washington.
+            <h2>History</h2>
+            <img src="images/lakesammamishdev.gif" alt="Recession of the Puget ice lobe and the formation of Lake Sammamish" height="10%" width="100%">
+            <p style="font-size: 20x;">(Above: The Recession of the Puget Ice Lobe and the Formation of Lake Sammamish)</p>
+            <p style="font-size: 20px;">Lake Sammamish is a remnant of history. The Lake is located in a glacial trough that was formed during the previous ice age. Parts of the ice sheet extended South through Puget Sound, where they formed both Lake Sammamish and Lake Washington.
                 Lake Sammamish was once deeper than it is now, as there is a river delta dumping sand and gravel into the lake. If the houses and infrastructure of Sammamish existed back then, they would all be underwater!
             </p>
-            <p style="font-size: 15px;">Lake Sammamish also contains the remains of many landslides. The clay that laid below the glaciers was slippery, causing many landslides to occur. Some we so big that entire forests were dragged into the Lake! If you kayak northwest to Greenwood
+            <p style="font-size: 20px;">Lake Sammamish also contains the remains of many landslides. The clay that laid below the glaciers was slippery, causing many landslides to occur. Some we so big that entire forests were dragged into the Lake! If you kayak northwest to Greenwood
                 Point, you can see some trees sticking out of the water. One of the forests was submerged over a thousand years ago when a large earthquake occurred. That’s such a long time!</p>
             <br>
         </div>
 
         <div class="grid-item timeline">
-            <h3>Timeline</h3>
-            <p>a timeline</p>
+            <h2>Videos</h2>
+            <p>Diving off Issaquah Creek in Lake Sammamish</p>
+            <iframe style="box-shadow: 5px 5px 5px 5px;" width="500" height="250" src="https://www.youtube.com/embed/kpClZD_SKig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <p>Lake Sammamish - North Kayaking in 4K UHD with Drone Aerials</p>
+            <iframe style="box-shadow: 5px 5px 5px 5px;" width="500" height="250" src="https://www.youtube.com/embed/GPZjCum4xck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <p>Aerial Views of Lake Sammamish | Near Seattle Washington</p>
+            <iframe style="box-shadow: 5px 5px 5px 5px;" width="500" height="250" src="https://www.youtube.com/embed/rBTHIlY8BGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <!--NEW CSS STYLE JIAXING (shadow) #2-->
         </div>
 
         <div class="grid-item issues">
-            <h3>Issues</h3>
-            <p style="font-size: 15px;">In just 100 years, the lake has experience drastic change, not all of which is beneficial. All sorts of waste are ending up in the Lake, such as:</p>
-            <ul>
-                <li>Dissolved bacteria</li>
-                <li>Chemicals from sewage treatment</li>
-                <li>Pollution from invasive plants and bulldozed soil</li>
-                <li>Urbanization waste</li>
+            <h2>Issues</h2>
+            <img src="images/waterpollution.jpg" alt="a lake being polluted by chemical waste" height="10%" width="100%">
+            <p style="font-size: 20px;">In just 100 years, the lake has experience drastic change, not all of which is beneficial. All sorts of waste are ending up in the Lake, such as:</p>
+            <ul style="font-size: 20px;">
+                <li class="tableitem">Dissolved bacteria</li>
+                <li class="tableitem">Chemicals from sewage treatment</li>
+                <li class="tableitem">Pollution from invasive plants and bulldozed soil</li>
+                <li class="tableitem">Urbanization waste</li>
             </ul>
+            <br>
+            <p>Recent Pollution Data</p>
+            <table>
+                <tr>
+                    <th>Pollutant</th>
+                    <th>Year</th>
+                    <th>Amount (µg/liter)</th>
+                </tr>
+                <tr>
+                    <td>Phosphorus</td>
+                    <td>1968</td>
+                    <td>30-35</td>
+                </tr>
+                <tr>
+                    <td>Phosphorus</td>
+                    <td>1973</td>
+                    <td>15-20</td>
+                </tr>
+                <tr>
+                    <td>Phosphorus</td>
+                    <td>1978</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Phosphorus</td>
+                    <td>1996</td>
+                    <td>22</td>
+                </tr>
+
+            </table>
+            <p>Pollution has begun to increase...</p>
+
+            <br>
+            <p>Map of Lake Sammamish</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86081.90651449526!2d-122.15331731765977!3d47.60553118406278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906de3c4edf83f%3A0x67e630b51df80d7!2sLake%20Sammamish!5e0!3m2!1sen!2sus!4v1652682133588!5m2!1sen!2sus"
+                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--NEW FEATURE JIAXING (map)-->
         </div>
 
 
@@ -81,10 +155,10 @@
 
 
         <div class="footer">
-            <footer>Lake Sammamish Page created by Jiaxing. Website Created by Cedar, Phoebe, & Jiaxing &#128513;</footer>
+            <footer>Lake Sammamish Page created by Jiaxing, Website Created by Cedar, Phoebe, & Jiaxing &#128513;</footer>
         </div>
     </div>
-    </div>
+
 
 </body>
 
