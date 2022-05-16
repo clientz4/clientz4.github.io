@@ -6,65 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Lake Union</title>
+    <title>Lake Washington</title>
 
     <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-gap: 10px;
-        }
-        
-        .grid-item {
-            background-color: aliceblue;
-            padding: 20px;
-        }
-        
-        .heading {
-            grid-column: 1/ span3;
-            grid-row: 2;
-        }
-        
-        .content1 {
-            grid-column: 1/2;
-            grid-row: 3;
-        }
-        
-        .content2 {
-            grid-column: 2/3;
-            grid-row: 3;
-        }
-        
-        .content3 {
-            grid-column: 3/4;
-            grid-row: 3;
+        .header {
+            background-image: url('images/salmon.jpg');
+            filter: brightness(70%);
+            padding-bottom: 200px;
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
         }
     </style>
+
 </head>
 
 <body>
-
-    <div>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lakeunion.html">Lake Union</a></li>
-            <li><a href="lakewa.html">Lake Washington</a></li>
-            <li><a href="lakesam.html">Lake Sammamish</a></li>
-            <li><a href="action.html">Get Involved</a></li>
-        </ul>
-    </div>
     <div class="grid-container">
-        <div class="grid-item heading">
-            <h1>Lake Washington</h1>
+        <div class="grid-item header">
+            <ul class="grid-item nav" align="center">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="lakeunion.html">Lake Union</a></li>
+                <li><a href="lakewa.html">Lake Washington</a></li>
+                <li><a href="lakesam.html">Lake Sammamish</a></li>
+                <li><a href="action.html">Get Involved</a></li>
+            </ul>
+            <h1 style="text-align:center; padding-top:100px; color:white;">Lake Washington</h1>
         </div>
-        <div class="grid-item content1">
+
+        <div class="grid-item history">
             <h2>History</h2>
+            <p>info abt lake washington history</p>
         </div>
-        <div class="grid-item content2">
+        <div class="grid-item timeline">
             <p>timeline</p>
         </div>
-        <div class="grid-item content3">
+        <div class="grid-item issues">
             <h2>Issues</h2>
+            <p>environmental issues</p>
         </div>
 
         <div class="footer">
