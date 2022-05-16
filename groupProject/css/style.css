@@ -18,7 +18,7 @@
         text-align: center;
         font-size: 30px;
         padding: 20px;
-        background-color: aliceblue;
+        background-color: rgba(216, 241, 252, 0.701);
     }
     
     .nav-menu {
@@ -103,4 +103,8 @@
     .container {
         grid-column: 1/ span 4;
         grid-row: 1/span 2;
+    }
+    
+    a:link {
+        text-decoration: none;
     }

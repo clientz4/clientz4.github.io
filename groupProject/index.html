@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- In this project I challenged myself by working with a group about a creative project. Most project that I work with other people on, the creative aspect isn't the highlight but in webdesign, I need to let myself share the creative process with my team. While I wouldn't say I am a controlling person, I would say that I can be a bit of a perfectionist. Another way I challenged myself other than emotionally was in formatting the frikin nav bar. I worked SO HARD on trying to get the navbar to look the way I wanted, I tried si many different things to get the background to be shaded and I ended up with a less than optimal solution but the navbar is still my favorite addition to this project.  -->
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
         .header {
             background-image: url('images/salmon.jpg');
             filter: brightness(75%);
+            /*New Feature*/
             padding-bottom: 200px;
             grid-column: 1/span 3;
             grid-row: 1/span 2;
@@ -18,6 +20,30 @@
         
         .eventsDiv {
             grid-column: 1;
+            grid-row: 3/span 2;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 190px;
+            border: 1px solid rgb(177, 224, 245);
+            font-size: medium;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #d4f0ff;
+        }
+        /*NEW THING zebra stripped tables*/
+        
+        #tableID {
+            grid-column: 3;
             grid-row: 3/span 2;
         }
     </style>
@@ -65,14 +91,41 @@
         </div>
         <div class="grid-item">
             <h2>Why This Website?</h2>
-            <p>An integral part of Washington and the Greater Seattle Area's culture is its nature and specifically it's lakes. In this web design project, we hoped to focus on some of the natural history/heritage of our local lakes. Though such a prominent
+            <p style="font-size: 25px; line-height: 2;">An integral part of Washington and the Greater Seattle Area's culture is its nature and specifically it's lakes. In this web design project, we hoped to focus on some of the natural history/heritage of our local lakes. Though such a prominent
                 part of west-Washington's geography, the history of the lakes is often less focused on. Because of the rapid urbanization of the Great Seattle Area, the output and result of that has been an absurd increase in the pollution of our lakes.
                 Our intent of this website was to spread awareness and to expose people to the history, current state, and volunteer events of our lakes.
             </p>
         </div>
+        <div class="grid-item" id="tableID">
+            <h2>Get to know us!</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Pages Worked On</th>
+                </tr>
+                <tr>
+                    <td>Cedar</td>
+                    <td>clientz@eastsideprep.org</td>
+                    <td>Home Page</td>
+                </tr>
+                <tr>
+                    <td>Phoebe</td>
+                    <td>pbryar@eastsideprep.org</td>
+                    <td>Lake Union and Lake WA</td>
+                </tr>
+                <tr>
+                    <td>Jiaxing</td>
+                    <td>jbrisbois@eastsideprep.org</td>
+                    <td>Lake Sammamish and Action Page</td>
+                </tr>
+            </table><br>
+            <img src="images/goofyAh.jpg" alt="silly little man" width="350px">
+        </div>
         <div class="footer">
             <footer>Home page created by Cedar. Website Created by Cedar, Phoebe, & Jiaxing &#128513;</footer>
         </div>
+
     </div>
 
 
