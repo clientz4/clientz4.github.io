@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript.</h1>
+
+    <h2>Onclick Events and Alerts.</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Warning! this link is taking you to a new website.')">Eastside Prep</a>
+    <!--Make Custom Altert--><br>
+    <a href="https://www.epschedule.com/" target="_blank" onclick="alert('Warning! this link is taking you to a new website.')">EPSchedule</a>
+
+    <h2>Change HTML Content with JavaScript</h2>
+    <h2>Secret Identity</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Evil Tina';document.getElementById('secret').style.display='block'">Reveal.</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide.</button>
+
+    <!--Make Custom Reveal buttons-->
+    <h2>Two Truths and a Lie</h2>
+    <ol>
+        <li>I have been to Canada</li>
+        <li>I have a cat and two dogs</li>
+        <li>I dont have my liscense </li>
+    </ol>
+    <p id="lie"></p>
+
+    <button onclick="document.getElementById('lie').innerHTML='1. I have been to Canada';document.getElementById('lie').style.display='block'">The Lie</button>
+    <button onclick="document.getElementById('lie').style.display='none'">Reset. </button>
+
+    <h2>Change an Image with JavaScript</h2>
+    <img src="images/icecream.JPG" alt="IceCream" id="icecream"><br>
+    <button onclick="document.getElementById('icecream').src='images/melted.JPG';document.getElementById('icecream').style.width='200px'">Melt Ice Cream</button>
+    <button onclick="document.getElementById('icecream').src='images/icecream.JPG'"> Freeze Ice Cream</button>
+
+    <h2>Change CSS styles with functions. </h2>
+    <p id="alice" style="font-size: 50px;"> Alice. </p>
+    <button onclick="growAlice()">Cake: Eat Me</button>
+    <!--Implement drink me-->
+    <button onclick="shrinkAlice()">Potion: Drink ME</button>
+
+    <h2>Change Background Colors</h2>
+    <button onclick="document.body.style.backgroundColor='lightpink'">Change Background to Pink</button>
+    <button onclick="document.body.style.backgroundColor='lightblue'">Change Background to Blue</button>
+
+    <h2>Change Cursor</h2>
+    <p id="demo">Hover over this after clicking the button</p>
+    <button type="button" onclick="cursor()"> Pointer</button>
+
+    <script>
+        function growAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'aliceblue';
+            aliceParagraph.style.fontSize = '100px';
+        }
+
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'lavender';
+            aliceParagraph.style.fontSize = '25px';
+        }
+
+        function cursor() {
+            document.getElementById("demo").style.cursor = "pointer";
+        }
+    </script>
+
+</body>
+
+</html>
