@@ -11,6 +11,7 @@
     <style>
         .header {
             background-image: url('images/lake-union2.jpg');
+            /*new feature - adjust image dimensions to fit div using cover property*/
             background-size: cover;
             filter: brightness(70%);
             padding-bottom: 200px;
@@ -18,8 +19,14 @@
             grid-row: 1/span 2;
         }
         
+        .big-image:hover {
+            /*new feature - enlarge image on hover*/
+            transform: scale(1.1);
+        }
+        
         p {
             font-size: 20px;
+            text-align: left;
         }
     </style>
 
@@ -47,9 +54,9 @@
         </div>
         <div class="grid-item timeline">
             <h2>Notable Moments</h2>
-            <img src="images/union1.PNG" alt="Lake Union, 1910" style="height:300px; width:auto">
+            <img src="images/union1.PNG" alt="Lake Union, 1910" style="height:300px; width:auto" class="big-image">
             <p>Lake Union's earliest mill, circa 1910.</p>
-            <img src="images/union2.PNG" alt="Lake Union, 1935" style="height:300px; width:auto">
+            <img src="images/union2.PNG" alt="Lake Union, 1935" style="height:300px; width:auto" class="big-image">
             <p>The Sewage Culprits: houseboasts on Lake Union in 1935.</p>
         </div>
         <div class="grid-item issues">
