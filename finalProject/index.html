@@ -20,6 +20,30 @@
         a {
             color: black;
         }
+        
+        .collapsible {
+            background-color: #d0c8c5;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: #D3D3D3;
+        }
+        
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
     </style>
     <title>Madison Books</title>
 </head>
@@ -42,10 +66,7 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="newsletter.html">NEWSLETTER</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">FIND US</a></li>
 
-                    <!--make this into a drop down menu -->
-                    <!--<li>BOOK RECOMENDATIONS/BEST SELLERS</li>-->
 
                     <li class="nav-item"><a class="nav-link" href="https://www.libro.fm/madisonbooks" target="_blank">AUDIOBOOKS</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://bookshop.org/shop/madisonbooks" target="_blank">ONLINE ORDERING</a></li>
@@ -90,18 +111,41 @@
             </p>
         </div>
         <div class="col-md-3">
-            <h4>Events</h4>
-            <!--Make drop down feature-->
-            <p1>We’re pleased to bring to our readers a series of literary events featuring some of the most interesting authors from the Northwest and beyond. Join us for stimulating discussion about books and much more. The full schedule and details about
-                every event are on our calendar. We also co-host a regional series of online author events called Books in Common NW; the full schedule is available on the BICNW calendar.</p1>
-            <h4>Our Newsletter</h4>
-            <!--Make drop down feature-->
-            <p>Periodically, we send out an email newsletter containing book recommendations, store news, and any other book-related thing we think you might want to know about. If you’d like to join our mailing list (we won’t spam you otherwise), you can
-                do so here.</p>
-            <h4>Phinney Books</h4>
-            <!--Make drop down feature-->
-            <p>Don’t forget to visit our sibling store in Seattle’s Greenwood/Phinney Ridge neighborhood, Phinney Books. Pay a call in person at 7405 Greenwood Ave. N or find their presence online at phinneybooks.com.</p>
+            <button type="button" class="collapsible">Events</button>
+            <div class="content">
+                <p>We’re pleased to bring to our readers a series of literary events featuring some of the most interesting authors from the Northwest and beyond. Join us for stimulating discussion about books and much more. The full schedule and details
+                    about every event are on our calendar. We also co-host a regional series of online author events called Books in Common NW; the full schedule is available on the BICNW calendar.</p>
+            </div>
+            <button type="button" class="collapsible">Our Newsletter</button>
+            <div class="content">
+                <p>Periodically, we send out an email newsletter containing book recommendations, store news, and any other book-related thing we think you might want to know about. If you’d like to join our mailing list (we won’t spam you otherwise), you
+                    can do so here.</p>
+            </div>
+
+            <button type="button" class="collapsible">Phinney Books</button>
+            <div class="content">
+                <p>Don’t forget to visit our sibling store in Seattle’s Greenwood/Phinney Ridge neighborhood, Phinney Books. Pay a call in person at 7405 Greenwood Ave. N or find their presence online at phinneybooks.com.</p>
+
+            </div>
         </div>
+
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
     </div>
 </body>
 
