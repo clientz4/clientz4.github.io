@@ -3,3 +3,9 @@ header {
     font-weight: 700;
     font-style: normal;
 }
+
+.double-space {
+    line-height: 2;
+    position: relative;
+    top: -.5em;
+}
